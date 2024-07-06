@@ -1,5 +1,4 @@
 # cadsourav.github.io
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +9,7 @@
     <h2>My CAD Portfolio</h2>
     
     <video width="1280" height="850" controls>
-        <source src="example.mp4" type="video/mp4">
+        <source src="Mechanical Design Portfolio.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </body>
