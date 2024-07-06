@@ -7,9 +7,9 @@
     <title>Embedded Video</title>
 </head>
 <body>
-    <h2>Embedded Video Example</h2>
+    <h2>My CAD Portfolio</h2>
     
-    <video width="640" height="360" controls>
+    <video width="1280" height="850" controls>
         <source src="example.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
