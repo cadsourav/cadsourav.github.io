@@ -43,10 +43,19 @@
 
 				<!-- Main -->
 				<head>
+					<!-- Featured Post -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video with Centered Play Button</title>
+    <title>Video presentation of the portfolio</title>
     <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
         .video-container {
             position: relative;
             width: 900px; /* Adjust width as needed */
@@ -79,12 +88,23 @@
 </head>
 <body>
 
-<div class="video-container">
-    <video controls>
-        <source src="images/Mechanical Design Portfolio.mp4" type="video/mp4">
-    </video>
-    <div class="play-button"></div>
+<div id="main">
+    <article class="post featured">
+        <header class="posts">
+            <h2>Video presentation of the portfolio</h2>
+        </header>
+        <div class="video-container">
+            <video controls>
+                <source src="images/Mechanical Design Portfolio.mp4" type="video/mp4">
+            </video>
+            <div class="play-button"></div>
+        </div>
+    </article>
 </div>
+
+</body>
+				
+        
 					<div id="main">
 
 						<!-- Featured Post -->
