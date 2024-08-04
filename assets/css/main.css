@@ -3603,25 +3603,57 @@ input, select, textarea {
 
 	#nav {
 		color: #ffffff;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
-		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
-		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
 		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
-		padding: 0 2rem 0 0;
+		padding: 0 2rem ; / *Add padding on both sides*/
 		position: relative;
-		width: calc(100% - 4rem);
+		width: calc(100% - 4rem); /* Adjust width */
 		max-width: 72rem;
 		z-index: 2;
 	}
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+    #nav {
+        padding: 0 1rem; /* Adjust padding for tablets */
+        width: calc(100% - 2rem); /* Adjust width for tablets */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0 auto; /* Center the nav */
+    }
+
+    /* Adjust specific elements inside #nav if needed */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    #nav {
+        padding: 0 1rem; /* Adjust padding for mobile screens */
+        width: 100%; /* Full width for mobile screens */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0 auto; /* Center the nav */
+        flex-direction: column; /* Stack items vertically if needed */
+    }
+
+    /* Additional styles for mobile screen layout */
+    #nav ul {
+        flex-direction: column; /* Stack list items vertically */
+        align-items: center; /* Center-align items */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+
+    #nav ul li {
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    #nav ul li:last-child {
+        margin-bottom: 0; /* Remove margin from the last item */
+    }
+}
 
 		#nav ul.divided li {
 			border-top-color: #ffffff;
