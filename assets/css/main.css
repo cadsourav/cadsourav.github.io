@@ -1,7 +1,11 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
-
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -3603,59 +3607,25 @@ input, select, textarea {
 
 	#nav {
 		color: #ffffff;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
 		display: flex;
+		-moz-transition: -moz-transform 1s ease, opacity 1s ease;
+		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
+		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
 		background: rgba(255, 255, 255, 0.175);
 		height: 4rem;
 		line-height: 4rem;
 		margin: -4rem auto 0 auto;
 		overflow: hidden;
-		padding: 0 2rem ; / *Add padding on both sides*/
+		padding: 0 2rem 0 0;
 		position: relative;
-		width: calc(100% - 4rem); /* Adjust width */
+		width: calc(100% - 4rem);
 		max-width: 72rem;
-		min-width: relative;
-		height: auto;
 		z-index: 2;
 	}
-/* Media Query for Tablets */
-@media (max-width: 1024px) {
-    #nav {
-        padding: 0 1rem; /* Adjust padding for tablets */
-        width: calc(100% - 2rem); /* Adjust width for tablets */
-        height: auto; /* Allow height to adjust based on content */
-        margin: 0 auto; /* Center the nav */
-    }
-
-    /* Adjust specific elements inside #nav if needed */
-}
-
-/* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-    #nav {
-        padding: 0 1rem; /* Adjust padding for mobile screens */
-        width: 100%; /* Full width for mobile screens */
-        height: auto; /* Allow height to adjust based on content */
-        margin: 0 auto; /* Center the nav */
-        flex-direction: column; /* Stack items vertically if needed */
-    }
-
-    /* Additional styles for mobile screen layout */
-    #nav ul {
-        flex-direction: column; /* Stack list items vertically */
-        align-items: center; /* Center-align items */
-        padding: 0; /* Remove padding */
-        margin: 0; /* Remove margin */
-    }
-
-    #nav ul li {
-        margin-bottom: 10px; /* Space between items */
-    }
-
-    #nav ul li:last-child {
-        margin-bottom: 0; /* Remove margin from the last item */
-    }
-}
 
 		#nav ul.divided li {
 			border-top-color: #ffffff;
@@ -3709,46 +3679,26 @@ input, select, textarea {
 		}
 
 		#nav ul.links {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
 			display: flex;
+			-moz-flex-grow: 1;
+			-webkit-flex-grow: 1;
+			-ms-flex-grow: 1;
 			flex-grow: 1;
+			-moz-flex-shrink: 1;
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
 			font-weight: 900;
-    			letter-spacing: 0.075em;
-    			list-style: none;
-    			margin: 0; /* Remove margin */
-    			padding: 0; /* Remove padding */
-    			text-transform: uppercase;
-    			justify-content: space-between; /* Distribute space evenly between items */
-    			align-items: center; /* Center items vertically */
-}
-
-/* Media Query for Tablets */
-@media (max-width: 1024px) {
-    #nav ul.links {
-        font-size: 0.9em; /* Adjust font size for tablets */
-        flex-direction: row; /* Keep items in a row */
-        justify-content: space-around; /* Distribute space around items */
-    }
-}
-
-/* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-    #nav ul.links {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items horizontally */
-        font-size: 1em; /* Adjust font size for mobile screens */
-    }
-
-    #nav ul.links li {
-        margin-bottom: 10px; /* Space between items */
-        text-align: center; /* Center-align text */
-    }
-
-    #nav ul.links li:last-child {
-        margin-bottom: 0; /* Remove margin from the last item */
-    }
-}
+			letter-spacing: 0.075em;
+			list-style: none;
+			margin-bottom: 0;
+			padding-left: 0;
+			text-transform: uppercase;
+		}
 
 			#nav ul.links li {
 				display: block;
@@ -4532,64 +4482,7 @@ input, select, textarea {
 				}
 
 		}
-/* styles.css */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
 
-#main {
-    padding: 20px;
-}
-
-.video-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    background: #000; /* Optional: background color for container */
-    margin: 0 auto; /* Centering the video container */
-}
-
-.video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    #nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #nav .links {
-        display: block;
-        width: 100%;
-    }
-
-    #nav .links li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    #nav .icons {
-        margin-top: 10px;
-    }
-
-    #nav .icons li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-}
 /* Nav Panel */
 
 	#navPanelToggle {
