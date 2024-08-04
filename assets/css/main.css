@@ -3695,6 +3695,48 @@ input, select, textarea {
 			padding-left: 0;
 			text-transform: uppercase;
 		}
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+    #nav {
+        padding: 0 1rem; /* Adjust padding for tablets */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0 auto; /* Center the nav */
+        width: 100%; /* Full width for tablets */
+    }
+
+    #nav ul.links {
+        font-size: 0.9em; /* Slightly reduce font size */
+        flex-direction: row; /* Keep horizontal layout but with adjusted spacing */
+        justify-content: space-around; /* Distribute space evenly */
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    #nav {
+        padding: 0 1rem; /* Adjust padding for mobile screens */
+        height: auto; /* Allow height to adjust based on content */
+        margin: 0 auto; /* Center the nav */
+        width: 100%; /* Full width for mobile screens */
+        overflow: visible; /* Allow content to be visible */
+        position: relative; /* Ensure position relative for stacking context */
+    }
+
+    #nav ul.links {
+        font-size: 1em; /* Adjust font size for mobile screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items */
+        padding: 0; /* Remove padding */
+    }
+
+    #nav ul.links li {
+        margin-bottom: 10px; /* Space between items */
+    }
+
+    #nav ul.links li:last-child {
+        margin-bottom: 0; /* Remove margin from the last item */
+    }
+}
 
 			#nav ul.links li {
 				display: block;
