@@ -3615,7 +3615,7 @@ input, select, textarea {
 		height: 4rem;
 		line-height: 4rem;
 		margin: auto auto auto auto;
-		overflow: scroll;
+		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
 		width: calc(100% - 4rem);
