@@ -4533,16 +4533,26 @@ body {
 @media (max-width: 768px) {
     #nav {
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
 
-    #nav .links li, #nav .icons li {
+    #nav .links {
+        display: block;
+        width: 100%;
+    }
+
+    #nav .links li {
         display: block;
         margin: 10px 0;
     }
 
-    #nav .links li {
-        margin-right: 0;
+    #nav .icons {
+        margin-top: 10px;
+    }
+
+    #nav .icons li {
+        display: inline-block;
+        margin-right: 10px;
     }
 }
 /* Nav Panel */
