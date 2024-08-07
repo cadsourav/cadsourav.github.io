@@ -4686,3 +4686,19 @@ input, select, textarea {
 		}
 
 	}
+	.gif-container {
+		width: 500px; /* Set the width of the container */
+		height: 300px; /* Set the height of the container */
+		overflow: hidden; /* Hide overflow to avoid scrollbar */
+		border: 2px solid #333; /* Optional: Add a border around the container */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #fff; /* Optional: Background color */
+	}
+	
+	.gif {
+		max-width: 100%; /* Ensure the GIF fits within the container */
+		max-height: 100%;
+		object-fit: cover; /* Scale the GIF to cover the entire container */
+	}
