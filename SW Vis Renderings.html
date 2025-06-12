@@ -10,7 +10,27 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
        
-        <style>
+<style>
+            body::before {
+			content: "";
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			background-image: linear-gradient(rgba(30, 37, 45, 0.6), rgba(30, 37, 45, 0.6)), url("../../images/ChatGPT\ Image\ Jun\ 10\,\ 2025\,\ 03_11_28\ PM.png");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			z-index: -1;
+		}
+
+		body {
+			background-color: #1e252d14;
+			margin: 0;
+			padding: 0;
+		}
+	
         html{
         background-color: white;
         }
@@ -21,7 +41,7 @@
         
         /* Slideshow container */
         .slideshow-container {
-        max-width: 720px;
+        max-width: 900px;
         position: relative;
         margin: auto
         
@@ -114,6 +134,31 @@
         .prev, .next,.text {font-size: 11px}
         }
         </style>
+        <style>
+		a.button2 {
+			display: inline-block;
+			padding: 0 2rem;
+			height: 3rem;
+			line-height: 3rem;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-size: 0.8rem;
+			font-weight: 900;
+			letter-spacing: 0.075em;
+			color: #ffffff !important;
+			background-color: transparent !important;
+			box-shadow: inset 0 0 0 2px #ffffff !important;
+			text-decoration: none;
+			border-radius: 0;
+			transition: all 0.2s ease-in-out;
+		}
+
+		a.button2:hover {
+			box-shadow: inset 0 0 0 2px #18bfef !important;
+			color: #18bfef !important;
+		}
+	</style>
         </head>
         <body>
         
@@ -123,58 +168,66 @@
         <img src="images/Chopper VL1.jpg" style="width:100%">
        
         <ul class="actions special">
-            <li><a href="index.html#p7" class="button">Close</a></li>
+            <li><a href="index.html#p7" class="button2">Close</a></li>
             
         </div>
         <div class="mySlides fade">
         <div class="numbertext">2/11</div>
         <img src="images/Chopper VL2.jpg" style="width:100%">
         <ul class="actions special">
-            <li><a href="index.html#p7" class="button">Close</a></li>
+            <li><a href="index.html#p7" class="button2">Close</a></li>
         </div>
         <div class="mySlides fade">
         <div class="numbertext">3/11</div> 
         <img src="images/Side 1.jpg" style="width:100%">
         <ul class="actions special">
-            <li><a href="index.html#p7" class="button">Close</a></li>
+            <li><a href="index.html#p7" class="button2">Close</a></li>
         </div>
         <div class="mySlides fade">
             <div class="numbertext">4/11</div> 
             <img src="images/Side 2.jpg" style="width:100%">
             <ul class="actions special">
-                <li><a href="index.html#p7" class="button">Close</a></li>
+                <li><a href="index.html#p7" class="button2">Close</a></li>
             </div>
             <div class="mySlides fade">
                 <div class="numbertext">5/11</div> 
                 <img src="images/Rear Side.jpg" style="width:100%">
                 <ul class="actions special">
-                    <li><a href="index.html#p7" class="button">Close</a></li>
-                </div>
+                    <li><a href="index.html#p7" class="button2">Close</a></li>
                 
+                        </div>
                         <div class="mySlides fade">
                             <div class="numbertext">8/11</div> 
                             <img src="images/On G 1.jpg" style="width:100%">
                             <ul class="actions special">
-                                <li><a href="index.html#p7" class="button">Close</a></li>
+                                <li><a href="index.html#p7" class="button2">Close</a></li>
                             </div>
                             <div class="mySlides fade">
                                 <div class="numbertext">9/11</div> 
                                 <img src="images/On Ground 2.jpg" style="width:100%">
                                 <ul class="actions special">
-                                    <li><a href="index.html#p7" class="button">Close</a></li>
+                                    <li><a href="index.html#p7" class="button2">Close</a></li>
                                 </div>
                                 <div class="mySlides fade">
                                     <div class="numbertext">10/11</div> 
                                     <img src="images/In Air 1.jpg" style="width:100%">
                                     <ul class="actions special">
-                                        <li><a href="index.html#p7" class="button">Close</a></li>
+                                        <li><a href="index.html#p7" class="button2">Close</a></li>
                                     </div>
                                     <div class="mySlides fade">
                                         <div class="numbertext">11/11</div> 
                                         <img src="images/In Air 2.jpg" style="width:100%">
                                         <ul class="actions special">
-                                            <li><a href="index.html#p7" class="button">Close</a></li>
+                                            <li><a href="index.html#p7" class="button2">Close</a></li>
                                         </div>
+                                    
+                                    
+                                        <div class="mySlides fade">
+                                            <div class="numbertext">7/11</div> 
+                                            <img src="images/Top 2.jpg" style="width:100%">
+                                            <ul class="actions special">
+                                                <li><a href="index.html#p7" class="button2">Close</a></li>
+                                            </div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         
@@ -192,7 +245,8 @@
         <span class="dot" onclick="currentSlide(7)"></span>
         <span class="dot" onclick="currentSlide(8)"></span>
         <span class="dot" onclick="currentSlide(9)"></span>
-        
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
         </div>
         
         <script>
@@ -222,7 +276,13 @@
         slides[slideIndex-1].style.display = "block";  
         dots[slideIndex-1].className += " active";
         }
-        
+       document.addEventListener("keydown", function(event) {
+  if (event.key === "ArrowLeft") {
+    plusSlides(-1);
+  } else if (event.key === "ArrowRight") {
+    plusSlides(1);
+  }
+}); 
         </script>
         
         </body>
